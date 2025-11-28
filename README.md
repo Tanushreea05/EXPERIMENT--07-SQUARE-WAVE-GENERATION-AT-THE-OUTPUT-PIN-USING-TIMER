@@ -273,39 +273,64 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 
 ## Output screen shots of proteus  :
- <img width="1043" height="696" alt="image" src="https://github.com/user-attachments/assets/3da01f10-9f74-4a37-9f3b-8b9bc497774d" />
+ <img width="1271" height="763" alt="image" src="https://github.com/user-attachments/assets/7a6fef0a-2b34-47cf-b13a-fa51e68fa513" />
 
- <img width="1047" height="667" alt="image" src="https://github.com/user-attachments/assets/de0cdecd-4a68-44e1-8697-9e33dfe084ed" />
+## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
+ <img width="722" height="506" alt="image" src="https://github.com/user-attachments/assets/49c38166-35a0-4e77-b6be-14c58ded82aa" />
 
-<img width="1037" height="552" alt="image" src="https://github.com/user-attachments/assets/3cb67a25-014a-4dc9-85af-72e45e112c4c" />
-
- 
- ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- <img width="1112" height="831" alt="image" src="https://github.com/user-attachments/assets/7806132b-b368-4f69-8691-6367406d3323" />
 
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
-FOR PULSE AT 500
+### FOR PULSE AT 250
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+<img width="1372" height="882" alt="Screenshot 2025-11-14 144129" src="https://github.com/user-attachments/assets/ce0c1518-fc8f-40ad-bc88-3ac0ad93e807" />
 
-FOR PULSE AT 700
+```
+Ton = 1.5 x 10 x 10^-6 = 15 x 10^-6
+Toff = 4.5 x 10 x 10^-6 = 45 x 10^-6
+Total Time = Ton + Toff = (15 + 45 )x 10^-6 = 60 x 10^-6
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+frequency = 1/Total time = 1/60 x 10^-6 = 0.0016MHz
 
+Duty cycle = Ton/Ton + Toff
+ 15 x 10^-6/ 60 x 10^-6 = 1/4 =0.25
 
-FOR PULSE AT 900
+ In percentage = 0.25 x 100 = 25%
+```
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+### FOR PULSE AT 500
+
+<img width="2559" height="1570" alt="Screenshot 2025-11-14 143303" src="https://github.com/user-attachments/assets/633c3866-a3d1-41dc-9e8a-b6014a40837c" />
+
+```
+Ton = 3 x 10 x 10^-6 = 30 x 10^-6
+Toff = 3 x 10 x 10^-6 = 30 x 10^-6
+Total Time = Ton + Toff = (15 + 45 )x 10^-6 = 60 x 10^-6
+
+frequency = 1/Total time = 1/60 x 10^-6 = 0.0016MHz
+
+Duty cycle = Ton/Ton + Toff
+ 30 x 10^-6/ 60 x 10^-6 = 1/2 =0.50
+
+ In percentage = 0.5 x 100 = 50%
+```
+
+### FOR PULSE AT 700
+
+<img width="2542" height="1529" alt="Screenshot 2025-11-14 143634" src="https://github.com/user-attachments/assets/4fa577c1-b230-474b-8408-47ff951785a8" />
+
+```
+Ton = 4.5 x 10 x 10^-6 = 45 x 10^-6
+Toff = 1.5 x 10 x 10^-6 = 15 x 10^-6
+Total Time = Ton + Toff = (15 + 45 )x 10^-6 = 60 x 10^-6
+
+frequency = 1/Total time = 1/60 x 10^-6 = 0.0016MHz
+
+Duty cycle = Ton/Ton + Toff
+ 45 x 10^-6/ 60 x 10^-6 = 3/4 =0.25
+
+ In percentage = 0.25 x 100 = 75%
+```
 
 
 ## Result :
